@@ -1,7 +1,7 @@
 
-import 'package:flutter_smart_home_ui/profile.dart';
 import 'package:flutter_smart_home_ui/home.dart';
-import 'package:flutter_smart_home_ui/search.dart';
+import 'package:flutter_smart_home_ui/profile/prrofile_screen.dart';
+
 
 import 'package:flutter_smart_home_ui/notifications.dart';
 import 'package:flutter_smart_home_ui/search/home.dart';

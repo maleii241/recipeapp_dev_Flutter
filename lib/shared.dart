@@ -10,7 +10,7 @@ buildTextTitleVariation1(String text){
       style: GoogleFonts.breeSerif(
         fontSize: 28,
         fontWeight: FontWeight.w900,
-       color: Colors.green,
+       color: Colors.white,
       ),
     ),
   );
@@ -36,9 +36,9 @@ buildTextSubTitleVariation1(String text){
     child: Text(
       text,
       style: TextStyle(
-        fontSize: 16,
+        fontSize: 20,
         fontWeight: FontWeight.bold,
-        color: Colors.grey[400],
+        color: Colors.deepOrange,
       ),
     ),
   );

@@ -53,6 +53,10 @@ dependencies:
   flutter_webview_plugin: ^0.4.0
   url_launcher: ^6.0.9
 
+  line_awesome_flutter: ^2.0.0
+  flutter_screenutil: ^5.0.0+2
+  animated_theme_switcher: ^2.0.1
+  cloud_firestore:
 
 
 
@@ -106,6 +110,17 @@ flutter:
     - family: OverpassRegular
       fonts:
         - asset: assets/fonts/overpass_regular.otf
+    - family: SFProText
+      fonts:
+        - asset: assets/fonts/SF-Pro-Text-Thin.otf
+          weight: 100
+        - asset: assets/fonts/SF-Pro-Text-Regular.otf
+          weight: 400
+        - asset: assets/fonts/SF-Pro-Text-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SF-Pro-Text-Bold.otf
+          weight: 700
+
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf

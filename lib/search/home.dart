@@ -32,7 +32,7 @@ class _HomeState extends State<HomeSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.orangeAccent,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

@@ -31,18 +31,13 @@ class _NotificationsState extends State<Notifications> {
 
   _buildProfileInfo() {
     return Container(
-      margin: EdgeInsets.all(20.0),
-      padding: EdgeInsets.all(20.0),
-      height: 100.0,
+      margin: EdgeInsets.all(20),
       decoration: BoxDecoration(
-       // color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black12,
-            offset: Offset(0, 1),
-            //blurRadius: 6.0,
-          ),
-        ],
+
+        borderRadius: BorderRadius.all(
+          Radius.circular(20),
+        ),
+        boxShadow: [kBoxShadow],
       ),
       child: Row(
         children: <Widget>[
@@ -83,19 +78,13 @@ class _NotificationsState extends State<Notifications> {
         ),
       ),
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
-        padding: EdgeInsets.all(10.0),
-        height: 140.0,
+        margin: EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: Colors.green,
-          boxShadow: [
-            BoxShadow(
-              //color: Colors.black12,
-
-              offset: Offset(0, 1),
-              blurRadius: 6.0,
-            ),
-          ],
+          color:   Colors.green,
+          borderRadius: BorderRadius.all(
+            Radius.circular(15),
+          ),
+          boxShadow: [kBoxShadow],
         ),
         child: Row(
           children: <Widget>[

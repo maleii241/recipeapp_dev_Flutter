@@ -2,12 +2,13 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_smart_home_ui/profile.dart';
+
+import 'package:flutter_smart_home_ui/profile/prrofile_screen.dart';
 import 'package:flutter_smart_home_ui/search/home.dart';
 
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:kf_drawer/kf_drawer.dart';
-import 'package:flutter_smart_home_ui/body.dart';
+
 import 'api/local_auth_api.dart';
 import 'class_builder.dart';
 import 'home.dart';
@@ -100,14 +101,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
           icon: Icon(Icons.video_call, color: Colors.white),
           page: ClassBuilder.fromString('Notifications'),
         ),
-        KFDrawerItem.initWithPage(
-          text: Text(
-            'Выход',
-            style: TextStyle(color: Colors.white, fontSize: 18),
-          ),
-          icon: Icon(Icons.settings, color: Colors.white),
-          onPressed: signOut,
-        ),
+        
       ],
     );
   }
@@ -142,7 +136,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
 
                     new Text('${user.displayName}',
                         style:
-                            new TextStyle(fontSize: 17, color: Colors.white)),
+                        new TextStyle(fontSize: 17, color: Colors.white)),
                     new SizedBox(height: 2),
                     new Text('${user.email}',
                         style: new TextStyle(fontSize: 15, color: Colors.grey)),

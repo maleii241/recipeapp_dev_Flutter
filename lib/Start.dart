@@ -70,7 +70,7 @@ class _StartState extends State<Start> {
 
             //SizedBox(height: 30.0),
             Text(
-              'Все рецепты на вашем устройстве',
+              'Все рецепты в одном устройстве',
               style: TextStyle(color: Color(0xff9C9C9D),fontSize: 20,),
 
             ),

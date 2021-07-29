@@ -16,7 +16,7 @@ class Detail extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.lightGreenAccent,
           leading: GestureDetector(
           onTap: () {
             Navigator.pop(context);

@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.green,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -53,15 +53,7 @@ class _HomeState extends State<Home> {
                 buildTextTitleVariation1('RecipeApp dev.'),
               ]),
               Spacer(),
-              Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    image: DecorationImage(
-                        image: AssetImage('images/IMG_20210524_133958.jpg'),
-                        fit: BoxFit.cover)),
-              ),
+
               SizedBox(width: 15),
             ],
           ),
@@ -71,23 +63,7 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
 
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
 
-                  buildTextSubTitleVariation1('Все рецепты в одном устройстве'),
-
-                  SizedBox(
-                    height: 40,
-                  ),
-
-
-
-                ],
-              ),
-            ),
 
             SizedBox(
               height: 24,
@@ -152,7 +128,7 @@ class _HomeState extends State<Home> {
       },
       child: Container(
         decoration: BoxDecoration(
-        //  color: Colors.white,
+          color:   Colors.green,
           borderRadius: BorderRadius.all(
             Radius.circular(20),
           ),
@@ -216,9 +192,9 @@ class _HomeState extends State<Home> {
 
   Widget buildPopular(Recipe recipe){
     return Container(
-      margin: EdgeInsets.all(16),
+      margin: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        //color: Colors.white,
+        color:   Colors.deepOrange,
         borderRadius: BorderRadius.all(
           Radius.circular(20),
         ),
